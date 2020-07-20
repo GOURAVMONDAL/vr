@@ -12,7 +12,9 @@ html{
 }
 
 
-
+body{
+    background:#1a1a23;
+}
 
 
 a.navbar-brand{
@@ -85,3 +87,108 @@ nav ul li a.nav-link{
     font-size:1.6rem;
     margin:30px 0;
 }
+
+
+/* section latest */
+
+.section-latest{
+    padding:80px 0;
+}
+
+.section-latest__upper{
+    max-width:500px;
+    margin:auto;
+}
+
+.section-latest__upper-heading{
+    font-size:50px;
+    font-weight:600;
+    color:#fff;
+}
+
+.section-latest__card{
+    height:400px;
+    border-radius:4px;
+}
+
+.section-latest__card--1{
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.466)),url('../img/img-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section-latest__card--1:hover{
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.603)),url('../img/img-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.section-latest__card--2{
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.466)),url('../img/img-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section-latest__card--2:hover{
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.603)),url('../img/img-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section-latest__card-content{
+    position:absolute;
+    left:8%;
+    bottom:8%;
+}
+
+.section-latest__para{
+    font-size:12px;
+    font-weight:400;
+    color:#fff;
+    margin:0;
+}
+
+.section-latest__heading{
+    font-size:18px;
+    font-weight:600;
+    color:#CECECE;
+    margin:5px 0px 15px 0px;
+}
+
+.h-margin{
+    margin-top:50px;
+}
+
+/* =======================Features section======================= */
+
+.features{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
