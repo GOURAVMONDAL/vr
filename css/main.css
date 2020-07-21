@@ -27,6 +27,9 @@ body{
     background:#1a1a23;
 }
 
+.navbar{
+    z-index:9999;
+}
 
 a.navbar-brand{
     font-family: 'Jura', sans-serif;
@@ -83,7 +86,42 @@ a.nav-link:hover::before{
     box-shadow:0px 15px 40px rgba(243, 29, 95,.4);
 }
 
+.button:hover{
+    color:#fff;
+    background:#df1a58;
+    padding:10px 50px;
+    border:none;
+    border-radius:100px;
+    font-size:1.6rem;
+    font-weight:500;
+    box-shadow:0px 15px 40px rgba(212, 25, 84, 0.4);
+}
 
+@media(max-width:992px) {
+    .navbar{
+        background:#1b1b23;
+    }
+}
+
+button.navbar-toggler svg{
+    fill:#F31D5F;
+}
+
+.cbg{
+    background:#1b1b23;
+    transition:.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.034);
+}
+
+.cbg .navbar-brand{
+    font-size:3rem;
+    transition:.3s;
+}
+
+.cbg .hbn{
+    font-size:1.4rem;
+    transition:.3s;
+}
 
 .header{
     background:url('../img/header-2.png');

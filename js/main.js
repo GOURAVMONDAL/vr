@@ -6,6 +6,9 @@ $(window).on('scroll', function() {
     let scrollPercent = (s/(d-c))*100;
     
     $('.red-line').css('width',scrollPercent + '%');
-    console.log(scrollPercent)
-   
+    if (s > 100) {
+        $('.navbar').addClass('cbg');
+    } else{
+        $('.navbar').removeClass('cbg');
+    }
 })
