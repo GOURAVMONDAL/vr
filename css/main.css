@@ -11,6 +11,17 @@ html{
     color:#3d3d3d;
 }
 
+span.red-line{
+    
+    height:3px;
+    background:#F31D5F;
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9999999999999999;
+}
+
 
 body{
     background:#1a1a23;
@@ -38,9 +49,28 @@ nav ul li a.nav-link{
     font-size:1.6rem;
     font-weight:400;
     text-transform:capitalize;
+    position: relative;
 }
 
 
+a.nav-link::before{
+    content:"";
+    display:inline-block;
+    width:100%;
+    height:10px;
+    border-bottom:2px solid #F31D5F;
+    position: absolute;
+    bottom:0;
+    left:0;
+    transform:scaleX(0);
+    transition:.3s;
+    transform-origin: left;
+}
+
+a.nav-link:hover::before{
+    transform:scaleX(1);
+    transform-origin: right;
+}
 
 .button{
     color:#fff;
@@ -70,7 +100,7 @@ nav ul li a.nav-link{
 /* ==========================HERO SECTION========================== */
 
 .hero-content{
-    padding-top:160px;
+    padding-top:250px;
     max-width:500px;
 }
 
@@ -161,34 +191,187 @@ nav ul li a.nav-link{
 /* =======================Features section======================= */
 
 .features{
-    
+    background:url('../img/feature.png');
+    background-color:#1D1E27;
+    background-position: 100% 80%;
+    background-repeat: no-repeat;
+    background-size:500px;
+    padding:100px 0;
+    position: relative;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 }
 
 
 
 
 
+.features-upper{
+    max-width:330px;
+    margin:0 auto 100px;
+
+}
+
+.features-heading{
+    font-size:50px;
+    font-weight:600;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.features-para{
+    font-size:16px;
+    font-weight:400;
+    color:#CECECE;
+}
+
+.features-item__img{
+    margin-bottom:20px;
+}
+
+.features-item__title{
+    font-size:22px;
+    color:#fff;
+}
+
+.features-item__para{
+    font-size:16px;
+    color:#CECECE;
+    padding-top:15px;
+}
+
+.p-relative{
+    position:relative;
+}
+
+/* =======================Client section======================= */
+
+.client{
+    padding:100px 0;
+}
+
+.client-upper{
+    width:400px;
+    margin:0 auto 70px;
+    text-align: center;
+}
+
+.client__heading{
+    font-size:50px;
+    font-weight:600;
+    color:#fff;
+}
+
+
+.client-img{
+    width:60px;
+    height:60px;
+    border-radius:100px;
+    border:3px solid #fff;
+    overflow: hidden;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.client-title{
+    font-size:20px;
+    color:#fff;
+    font-weight:500;
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.client-para{
+    font-size:16px;
+    font-weight:400;
+    color:#CECECE;
+    text-align: center;
+    position: relative;
+}
+
+.client-para::before{
+    content:"";
+    display:block;
+    background:url('../img/quote.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:20px;
+    height:20px;
+    position: absolute;
+    top:-18px;
+    left:0;
+}
+
+.client-para::after{
+    content:"";
+    display:block;
+    background:url('../img/quote.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:20px;
+    height:20px;
+    position: absolute;
+    right:0;
+    bottom:-18px;
+    transform:rotate(180deg);
+}
+
+/* =======================Cta section======================= */
+
+.cta{
+    background-color:#1D1E27;
+    padding-top:150px;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}
 
 
 
+.cta-heading{
+    font-size:60px;
+    font-weight:300;
+    color:#fff;
+}
 
 
+.cta-para{
+    font-size:20px;
+    color:#CECECE;
+    margin:15px auto;
+    font-weight:300;
+    width:80%;
+}
 
+/*==========================Footer==========================*/
 
+.f-row{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
 
+.footer{
+    margin-top:150px;
+}
 
+.footer-list{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+    justify-content: flex-end;
+}
 
+.footer-item{
+    padding:10px 20px;
+}
 
+.footer-link{
+    font-size:16px;
+    color:#fff;
+    text-decoration: none;
+}
 
-
-
-
-
-
-
-
-
-
-
+.footer-link:hover{
+    color:#cecece;
+}
 
 
