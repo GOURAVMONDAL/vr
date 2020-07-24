@@ -431,4 +431,5 @@ span.loading{
     transform: translate(-50%,-50%);
     z-index: 9999999999;
     transition:1s;
+    color:rgb(255, 255, 255);
 }
