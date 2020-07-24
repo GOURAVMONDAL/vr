@@ -12,3 +12,12 @@ $(window).on('scroll', function() {
         $('.navbar').removeClass('cbg');
     }
 })
+
+const tilt = $('.js-tilt').tilt();
+
+$(window).on('load', function() {
+    $('span.loading').css('opacity','0',);
+    setTimeout(function() {
+        $('.loader').css('transform','translateY(-100%)')
+    }, 500)
+})

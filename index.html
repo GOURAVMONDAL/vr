@@ -11,6 +11,9 @@
 </head>
 <body>
   <span class="red-line"></span>
+  <div class="loader">
+    <span class="loading">Loading...</span>
+  </div>
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">Get<span>vr.</span></a>
@@ -61,7 +64,7 @@
       <div class="section-latest__content">
         <div class="row justify-content-center h-margin">
           <div class="col-lg-4 col-md-6 col-sm-8 col-xs-8 mb-5">
-            <div class="section-latest__card section-latest__card--1">
+            <div data-tilt class="section-latest__card section-latest__card--1">
               <div class="section-latest__card-content">
                 <p class="section-latest__para">#Made for best entertainment experience</p>
                 <h3 class="section-latest__heading">Enjoy your movie</h3>
@@ -70,7 +73,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-8 col-xs-8 mb-5">
-            <div class="section-latest__card section-latest__card--2">
+            <div data-tilt class="section-latest__card section-latest__card--2">
               <div class="section-latest__card-content">
                 <p class="section-latest__para">#Made for best entertainment experience</p>
                 <h3 class="section-latest__heading">Enjoy your movie</h3>
@@ -189,6 +192,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha512-I5TkutApDjnWuX+smLIPZNhw+LhTd8WrQhdCKsxCFRSvhFx2km8ZfEpNIhF9nq04msHhOkE8BMOBj5QE07yhMA==" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
